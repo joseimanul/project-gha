@@ -1,0 +1,10 @@
+name: Bash Pipeline
+on: workflow_dispatch #For manual trigger
+jobs:
+  job: #Can have any name, is like a stage
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print messages
+        run: echo "Hello Jose"
+      - name: Print ls
+        run: ls -lrta
